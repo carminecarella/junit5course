@@ -25,7 +25,7 @@ dependencies {
 // use JUnit 5 platform, supplying the unit test platform to the build tool
 test {
     useJUnitPlatform {
-        includeTags 'unit', 'exception'
+        includeTags 'unit', 'exception', 'assumptions'
         excludeTags 'timeout'
     }
 }

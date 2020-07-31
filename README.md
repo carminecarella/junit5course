@@ -9,6 +9,8 @@ Mock frameworks
 - Mockito
 - Wiremock
 
+course link https://github.com/bonigarcia/mastering-junit5
+
 ## JUnit 4 limitations
 
 Runner API
@@ -101,3 +103,30 @@ We can filter tests to be executed based on:
 
 ### Meta Annotations and Composed Annotations
 https://junit.org/junit5/docs/current/user-guide/#writing-tests-meta-annotations
+
+### Disable Test Based on a Condition
+https://github.com/bonigarcia/mastering-junit5/tree/master/junit5-conditional-tests
+
+### Assumptions
+Assumptions allow to only run tests if certain conditions are as expected
+
+The methods `assumeTrue` and `assumeFalse` can be used to skip tests whose preconditions are not met
+
+The method `assumingThat` is used to condition the execution of a part in a test
+
+### Nested Test
+Nested tests give the test writer more capabilities to express the relationship among several group of tests
+
+### Repeated Test
+The ability to repeat a test a specified number of times with the annotation `@RepeatedTest(2)`
+
+https://junit.org/junit5/docs/current/user-guide/#writing-tests-repeated-tests
+
+### Dynamic Test
+Static tests are the tests defined at compile time `@Test`
+
+JUnit 5 allows to generate test at runtime by a factory method that is annotated with `@TestFactory`
+
+A Dynamic test is created using the DynamicTest class in Jupiter
+
+https://junit.org/junit5/docs/current/user-guide/#writing-tests-dynamic-tests 
