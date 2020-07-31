@@ -10,6 +10,7 @@ Mock frameworks
 - Wiremock
 
 course link https://github.com/bonigarcia/mastering-junit5
+very good intro https://www.youtube.com/watch?v=AGcdT1W3eXA
 
 ## JUnit 4 limitations
 
@@ -93,7 +94,21 @@ The package org.junit.jupiter.api.extension since it contains all extension defi
 - AssertJ
 - Truth
 
-### Filter Tests with Gradle
+## JUnit 5 Jupiter Functionalities
+
+Here a list of new functionalities in JUnit 5 Jupiter programming model
+
+- Visibility: everything does not have to be `public`
+- Custom display names
+- Tagging (Category)
+- Meta-annotation support
+- Conditional test execution
+- Dependency injection for constructor and methods
+- Interface default methods and testing traits
+- `@Nested` test classes
+- `@RepeatedTest`, `@ParameterizedTest`, `@TestFactory`
+
+### Tagging - Filter Tests with Gradle
 We can filter tests to be executed based on:
 
 - Test engine: using the keyword engines we can include or exclude the test engine to be used
@@ -114,13 +129,16 @@ The methods `assumeTrue` and `assumeFalse` can be used to skip tests whose preco
 
 The method `assumingThat` is used to condition the execution of a part in a test
 
-### Nested Test
+### Nested
 Nested tests give the test writer more capabilities to express the relationship among several group of tests
 
-### Repeated Test
+### Repeated
 The ability to repeat a test a specified number of times with the annotation `@RepeatedTest(2)`
 
 https://junit.org/junit5/docs/current/user-guide/#writing-tests-repeated-tests
+
+### Parameterized
+https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests
 
 ### Dynamic Test
 Static tests are the tests defined at compile time `@Test`
