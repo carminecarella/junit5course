@@ -1,4 +1,4 @@
-#JUnit5 Course
+# JUnit5 Course
 
 JUnit 5 (2017) requires Java 8 at runtime
 
