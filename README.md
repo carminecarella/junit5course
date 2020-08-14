@@ -149,3 +149,8 @@ JUnit 5 allows to generate test at runtime by a factory method that is annotated
 A Dynamic test is created using the DynamicTest class in Jupiter
 
 https://junit.org/junit5/docs/current/user-guide/#writing-tests-dynamic-tests 
+
+### Jupiter 5.3
+
+Parallel Test Execution
+Execution mode and Synchronization
